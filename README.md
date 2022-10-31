@@ -10,3 +10,5 @@
 <a href="https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl" target="_blank">Watch the Brain GCD Game recording</a>
 
 <a href="https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK" target="_blank">Watch the Brain Progression Game recording</a>
+
+<a href="https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR" target="_blank">Watch the Brain Prime Game recording</a>

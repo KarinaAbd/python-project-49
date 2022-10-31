@@ -37,5 +37,5 @@ def get_content():
     question = ''
     for elem in progression:
         question += f'{elem} '
-    
+
     return [question, cor_answer]
