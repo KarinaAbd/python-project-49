@@ -4,15 +4,7 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def play(game_name):
-    """Greet the player and ask his/her name"""
-
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-
-    print(game_name.RULE)
-
-    """The game takes 3 rounds"""
+def count_rounds(game_name):
     rounds = 0
     while rounds < 3:
         """Take the question and the correct answer from the game module"""
@@ -29,6 +21,17 @@ def play(game_name):
 Correct answer was '{cor_answer}'.")
             break
 
+
+def play(game_name):
+    """Greet the player and ask his/her name"""
+
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
+
+    print(game_name.RULE)
+
+    """The game takes 3 rounds"""
+    rounds = count_rounds(game_name)
     if rounds == 3:
         print(f'Congratulations, {name}!')
     else:
