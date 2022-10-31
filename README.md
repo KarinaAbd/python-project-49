@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI" target="_blank">Watch the Brain Calc Game recording</a>
 
 <a href="https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl" target="_blank">Watch the Brain GCD Game recording</a>
+
+<a href="https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK" target="_blank">Watch the Brain Progression Game recording</a>
