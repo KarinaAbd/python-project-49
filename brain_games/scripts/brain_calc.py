@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 
-from brain_games.games.calc_game import play_calc_game
+"""Brain Calc Game"""
+
+from brain_games.general_logic import play
+from brain_games.games import calc_game
 
 
 def main():
-    play_calc_game()
+    """Start to play Calc Game"""
+    play(calc_game)
 
 
 if __name__ == '__main__':

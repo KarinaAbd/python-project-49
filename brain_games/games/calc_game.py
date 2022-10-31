@@ -1,36 +1,27 @@
-from brain_games.cli import welcome_user
-from brain_games.games.main_logic import generate_num, ask
-from brain_games.games.main_logic import get_answer, check_answer, finish
 import random
 
 
-def play_calc_game():
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-
-    print('What is the result of the expression?')
-    i = 0
-    while i != 3:
-        random_exp = get_expression()
-        ask(random_exp)
-
-        user_answer = get_answer()
-        cor_answer = str(eval(random_exp))
-
-        if check_answer(user_answer, cor_answer):
-            i += 1
-        else:
-            break
-
-    finish(i, name)
+RULE = 'What is the result of the expression?'
 
 
 def get_expression():
-    num1 = generate_num(1)
-    num2 = generate_num(1)
+    num1 = random.randint(0, 20)
+    num2 = random.randint(0, 20)
 
-    expression_1 = f'{num1} + {num2}'
-    expression_2 = f'{num1} - {num2}'
-    expression_3 = f'{num1} * {num2}'
+    operator = ['+', '-', '*']
+    op = random.choice(operator)
 
-    return random.choice([expression_1, expression_2, expression_3])
+    """Assemble the expression from random numbers and operator"""
+    expression = f'{num1} {op} {num2}'
+    return expression
+
+
+def get_answer(expression):
+    """Calculating the expression"""
+    return str(eval(expression))
+
+
+def get_content():
+    question = get_expression()
+    cor_answer = get_answer(question)
+    return [question, cor_answer]
