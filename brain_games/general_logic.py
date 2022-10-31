@@ -21,6 +21,8 @@ def count_rounds(game_name):
 Correct answer was '{cor_answer}'.")
             break
 
+    return rounds
+
 
 def play(game_name):
     """Greet the player and ask his/her name"""

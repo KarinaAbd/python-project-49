@@ -12,6 +12,17 @@ def get_poss_divisors(number):
     return poss_divisors
 
 
+def get_real_divisors(poss_divisors, number):
+    divisors = []
+    for char in poss_divisors:
+        if number % char == 0:
+            divisors.append(char)
+        else:
+            continue
+
+    return divisors
+
+
 def get_answer(number):
     """The first prime number is 2"""
     if number > 1:
@@ -19,12 +30,8 @@ def get_answer(number):
         poss_divisors = get_poss_divisors(number)
 
         """Collect a list of real divisors of the number"""
-        divisors = []
-        for char in poss_divisors:
-            if number % char == 0:
-                divisors.append(char)
-            else:
-                continue
+        divisors = get_real_divisors(poss_divisors, number)
+
         """
         Check the length of the divisor list.
         A prime number should have only 1,
