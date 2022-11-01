@@ -4,24 +4,22 @@ import random
 RULE = 'What is the result of the expression?'
 
 
-def get_expression():
-    num1 = random.randint(0, 20)
-    num2 = random.randint(0, 20)
+def get_content():
+    first_number = random.randint(0, 20)
+    second_number = random.randint(0, 20)
 
-    operator = ['+', '-', '*']
-    op = random.choice(operator)
+    operators = ['+', '-', '*']
+    operator = random.choice(operators)
 
     """Assemble the expression from random numbers and operator"""
-    expression = f'{num1} {op} {num2}'
-    return expression
+    question = f'{first_number} {operator} {second_number}'
 
+    if operator == '+':
+        answer = first_number + second_number
+    elif operator == "-":
+        answer = first_number - second_number
+    else:
+        answer = first_number * second_number
+    correct_answer = str(answer)
 
-def get_answer(expression):
-    """Calculating the expression"""
-    return str(eval(expression))
-
-
-def get_content():
-    question = get_expression()
-    cor_answer = get_answer(question)
-    return [question, cor_answer]
+    return [question, correct_answer]
