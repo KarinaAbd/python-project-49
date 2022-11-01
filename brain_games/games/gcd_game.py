@@ -5,9 +5,9 @@ RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def get_content():
-    num1 = random.randint(0, 25)
-    num2 = random.randint(25, 50)
+    first_number = random.randint(0, 25)
+    second_number = random.randint(25, 50)
 
-    question = f'{num1} {num2}'
-    cor_answer = str(gcd(num1, num2))
-    return [question, cor_answer]
+    question = f'{first_number} {second_number}'
+    correct_answer = str(gcd(first_number, second_number))
+    return [question, correct_answer]
