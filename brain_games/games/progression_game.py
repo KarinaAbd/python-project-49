@@ -6,17 +6,17 @@ RULE = 'What number is missing in the progression?'
 
 def get_progression():
     """Define the beginning of the progression"""
-    first_num = random.randint(0, 10)
-    progression = [first_num]
+    first_number = random.randint(0, 10)
+    progression = [first_number]
 
     """Define the length & the step of the progression"""
-    len_of_progr = random.randint(5, 10)
+    progression_size = random.randint(5, 10)
     step = random.randint(3, 11)
 
     """Assemble the progression in the form of a list"""
-    while len(progression) < len_of_progr:
-        next_num = progression[-1] + step
-        progression.append(next_num)
+    while len(progression) < progression_size:
+        next_number = progression[-1] + step
+        progression.append(next_number)
 
     return progression
 
@@ -28,14 +28,12 @@ def get_content():
     last_index = len(progression) - 1
     random_index = random.randint(0, last_index)
 
-    """Delete the symbol and save it in the correct answer"""
-    answer = progression.pop(random_index)
-    cor_answer = str(answer)
+    """Find and save the correct answer in string format"""
+    answer = progression[random_index]
+    correct_answer = str(answer)
 
-    """Replace the deleted character with .. and convert the list to a string"""
-    progression.insert(random_index, '..')
-    question = ''
-    for elem in progression:
-        question += f'{elem} '
+    """Replace the number with .. and convert the list to a string"""
+    progression[random_index] = '..'
+    question = ' '.join(map(str, progression))
 
-    return [question, cor_answer]
+    return [question, correct_answer]
