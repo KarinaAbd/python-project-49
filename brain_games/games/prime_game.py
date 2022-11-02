@@ -19,6 +19,7 @@ def get_content():
 
     if is_prime(question):
         correct_answer = 'yes'
-    correct_answer = 'no'
+    else:
+        correct_answer = 'no'
 
     return question, correct_answer
