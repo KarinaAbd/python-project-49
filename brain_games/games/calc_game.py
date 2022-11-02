@@ -1,6 +1,5 @@
 import random
 
-
 RULE = 'What is the result of the expression?'
 
 
@@ -18,8 +17,8 @@ def get_content():
         answer = first_number + second_number
     elif operator == "-":
         answer = first_number - second_number
-    else:
+    elif operator == "*":
         answer = first_number * second_number
     correct_answer = str(answer)
 
-    return [question, correct_answer]
+    return question, correct_answer
