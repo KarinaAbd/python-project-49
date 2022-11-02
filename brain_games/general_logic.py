@@ -3,12 +3,15 @@
 import prompt
 
 
-def play(game):
-    """Greet the player and ask his/her name"""
-
+def welcome_user():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+
+
+def play(game):
+    """Greet the player and ask his/her name"""
+    name = welcome_user()
 
     print(game.RULE)
 
