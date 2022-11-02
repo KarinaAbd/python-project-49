@@ -1,6 +1,5 @@
 import random
 
-
 RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -12,4 +11,4 @@ def get_content():
     else:
         correct_answer = 'no'
 
-    return [question, correct_answer]
+    return question, correct_answer
