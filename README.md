@@ -9,10 +9,12 @@
 This repository was created as part of <a href="https://ru.hexlet.io/programs/python/projects/49" target="_blank">a Hexlet study project.</a> "Brain Games" is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is passed. Incorrect answer ends the game and offers to pass. 
 
 Games:
-<ul>
-<li><a href="https://asciinema.org/a/DMHFfVRfpf0VJFTsKBL4KdGrD" target="_blank">Watch the Brain Even Game recording.</a></li>
-<li><a href="https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI" target="_blank">Watch the Brain Calc Game recording</a></li>
-<li><a href="https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl" target="_blank">Watch the Brain GCD Game recording</a></li>
-<li><a href="https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK" target="_blank">Watch the Brain Progression Game recording</a></li>
-<li><a href="https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR" target="_blank">Watch the Brain Prime Game recording</a></li>
-</ul>
+[![asciicast](https://asciinema.org/a/DMHFfVRfpf0VJFTsKBL4KdGrD.svg)](https://asciinema.org/a/DMHFfVRfpf0VJFTsKBL4KdGrD)
+
+[![asciicast](https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI.svg)](https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI)
+
+[![asciicast](https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl.svg)](https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl)
+
+[![asciicast](https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK.svg)](https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK)
+
+[![asciicast](https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR.svg)](https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR)
