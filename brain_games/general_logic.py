@@ -2,6 +2,8 @@
 
 import prompt
 
+ROUNDS_MAXIMUM = 3
+
 
 def play(game):
     """Greet the player and ask his/her name"""
@@ -11,9 +13,6 @@ def play(game):
     print(f'Hello, {name}!')
 
     print(game.RULE)
-
-    # rounds = 0
-    ROUNDS_MAXIMUM = 3
 
     for round in range(0, ROUNDS_MAXIMUM):
         question, correct_answer = game.get_content()
