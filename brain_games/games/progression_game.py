@@ -1,6 +1,5 @@
 import random
 
-
 RULE = 'What number is missing in the progression?'
 
 
@@ -36,4 +35,4 @@ def get_content():
     progression[random_index] = '..'
     question = ' '.join(map(str, progression))
 
-    return [question, correct_answer]
+    return question, correct_answer
