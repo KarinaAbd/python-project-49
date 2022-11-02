@@ -12,11 +12,10 @@ def play(game):
 
     print(game.RULE)
 
-    rounds = 0
+    # rounds = 0
     ROUNDS_MAXIMUM = 3
 
-    while rounds < ROUNDS_MAXIMUM:
-        """Take the question and the correct answer from the game module"""
+    for round in range(0, ROUNDS_MAXIMUM):
         question, correct_answer = game.get_content()
 
         print(f'Question: {question}')
@@ -24,13 +23,12 @@ def play(game):
 
         if user_answer == correct_answer:
             print('Correct!')
-            rounds += 1
+            round += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
             break
 
-    if rounds == ROUNDS_MAXIMUM:
-        print(f'Congratulations, {name}!')
     else:
-        print(f"Let's try again, {name}!")
+        print(f'Congratulations, {name}!')
