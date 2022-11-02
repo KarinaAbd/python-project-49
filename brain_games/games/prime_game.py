@@ -4,46 +4,20 @@ import random
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_poss_divisors(number):
-    poss_divisors = [1]
-    while poss_divisors[-1] != (number // 2):
-        next_num = poss_divisors[-1] + 1
-        poss_divisors.append(next_num)
-    return poss_divisors
-
-
-def get_real_divisors(poss_divisors, number):
-    divisors = []
-    for char in poss_divisors:
-        if number % char == 0:
-            divisors.append(char)
-        else:
-            continue
-
-    return divisors
-
-
-def get_answer(number):
+def is_prime(number):
     """The first prime number is 2"""
     if number > 1:
-        """Collect a list of possible divisors from 1 to half of the number"""
-        poss_divisors = get_poss_divisors(number)
-
-        """Collect a list of real divisors of the number"""
-        divisors = get_real_divisors(poss_divisors, number)
-
-        """
-        Check the length of the divisor list.
-        A prime number should have only 1,
-        because we have halved the list of possible divisors.
-        """
-        if len(divisors) == 1:
-            return 'yes'
-        return 'no'
+        divisors = range(2, number + 1)
+        for element in divisors:
+            if number % element == 0 and element == number:
+                return 'yes'
+            elif number % element == 0 and element != number:
+                return 'no'
+            continue
     return 'no'
 
 
 def get_content():
     question = random.randint(0, 50)
-    cor_answer = get_answer(question)
-    return [question, cor_answer]
+    correct_answer = is_prime(question)
+    return [question, correct_answer]
