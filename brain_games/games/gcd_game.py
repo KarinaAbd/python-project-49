@@ -10,4 +10,4 @@ def get_content():
 
     question = f'{first_number} {second_number}'
     correct_answer = str(gcd(first_number, second_number))
-    return [question, correct_answer]
+    return question, correct_answer
