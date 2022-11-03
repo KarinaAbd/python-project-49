@@ -14,7 +14,7 @@ def play(game):
 
     print(game.RULE)
 
-    for round in range(0, ROUNDS_MAXIMUM):
+    for _ in range(ROUNDS_MAXIMUM):
         question, correct_answer = game.get_content()
 
         print(f'Question: {question}')
@@ -22,7 +22,7 @@ def play(game):
 
         if user_answer == correct_answer:
             print('Correct!')
-            round += 1
+            _ += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'.")
