@@ -3,12 +3,12 @@
 """Brain Greatest Common Divisor (GCD) Game"""
 
 from brain_games.general_logic import play
-from brain_games.games import gcd_game
+from brain_games.games import gcd
 
 
 def main():
     """Start to play GCD Game"""
-    play(gcd_game)
+    play(gcd)
 
 
 if __name__ == '__main__':
