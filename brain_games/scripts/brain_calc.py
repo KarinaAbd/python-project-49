@@ -2,7 +2,7 @@
 
 """Brain Calc Game"""
 
-from brain_games.general_logic import play
+from brain_games.game_engine import play
 from brain_games.games import calc
 
 
