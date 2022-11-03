@@ -18,22 +18,22 @@ This repository was created as part of [a Hexlet study project](https://ru.hexle
 
 ### Games
 
-**Checking a number for even**
+**Checking a number for even**  
 Command to start the game - *brain-even*
 [![asciicast](https://asciinema.org/a/DMHFfVRfpf0VJFTsKBL4KdGrD.svg)](https://asciinema.org/a/DMHFfVRfpf0VJFTsKBL4KdGrD)
 
-**Calculator**
+**Calculator**  
 Command to start the game - *brain-calc*
 [![asciicast](https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI.svg)](https://asciinema.org/a/wuQrD1bEWCCDnFyH4E41tDDsI)
 
-**Find the greatest common divisor**
+**Find the greatest common divisor**  
 Command to start the game - *brain-gcd*
 [![asciicast](https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl.svg)](https://asciinema.org/a/ma96yOZYhydjhA13Or0MhOVUl)
 
-**Find missing number in the progression**
+**Find missing number in the progression**  
 Command to start the game - *brain-progression*
 [![asciicast](https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK.svg)](https://asciinema.org/a/vqoAj9CIyqzSsEqNoyjE4hnmK)
 
-**Definition of a prime number**
+**Definition of a prime number**  
 Command to start the game - *brain-prime*
 [![asciicast](https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR.svg)](https://asciinema.org/a/F5B2pDjQ80mF4LseShceoRUzR)
