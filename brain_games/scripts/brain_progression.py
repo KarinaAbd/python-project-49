@@ -3,12 +3,12 @@
 """Brain Progression Game"""
 
 from brain_games.general_logic import play
-from brain_games.games import progression_game
+from brain_games.games import progression
 
 
 def main():
     """Start to play Progression Game"""
-    play(progression_game)
+    play(progression)
 
 
 if __name__ == '__main__':
