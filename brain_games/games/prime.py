@@ -6,7 +6,8 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     if number > 1:
-        divisors = range(2, int(math.sqrt(number) + 1))
+        number_sqrt = int(math.sqrt(number))
+        divisors = range(2, (number_sqrt + 1))
         for element in divisors:
             if number % element == 0:
                 return False
