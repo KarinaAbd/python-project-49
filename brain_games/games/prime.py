@@ -6,13 +6,11 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     if number > 1:
-        number_sqrt = int(math.sqrt(number))
-        divisors = range(2, (number_sqrt + 1))
-        for element in divisors:
-            if number % element == 0:
+        first_divisor = 2
+        while first_divisor <= math.sqrt(number):
+            if number % first_divisor == 0:
                 return False
-            elif number % element != 0:
-                continue
+            first_divisor += 1
         return True
 
 
