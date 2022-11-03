@@ -10,7 +10,6 @@ def get_content():
     operators = ['+', '-', '*']
     operator = random.choice(operators)
 
-    """Assemble the expression from random numbers and operator"""
     question = f'{first_number} {operator} {second_number}'
 
     if operator == '+':
