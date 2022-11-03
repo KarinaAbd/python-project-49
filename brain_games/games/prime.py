@@ -6,15 +6,15 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     if number > 1:
+        i = 0
         divisors = range(2, int(math.sqrt(number) + 1))
         for element in divisors:
             if number % element == 0:
-                return False
-            elif number % element != 0:
-                continue
-        return True
-    else:
+                i += 1
+        if i == 0:
+            return True
         return False
+    return False
 
 
 def get_content():
