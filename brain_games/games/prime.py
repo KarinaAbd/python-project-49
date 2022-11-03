@@ -1,17 +1,20 @@
 import random
+import math
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    divisors = range(2, number + 1)
-    for element in divisors:
-        if number % element == 0 and element == number:
-            return True
-        elif number % element == 0 and element != number:
-            return False
-        continue
-    return False
+    if number > 1:
+        divisors = range(2, int(math.sqrt(number) + 1))
+        for element in divisors:
+            if number % element == 0:
+                return False
+            elif number % element != 0:
+                continue
+        return True
+    else:
+        return False
 
 
 def get_content():
