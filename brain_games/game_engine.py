@@ -22,7 +22,6 @@ def play(game):
 
         if user_answer == correct_answer:
             print('Correct!')
-            _ += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'.")
