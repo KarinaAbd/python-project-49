@@ -12,6 +12,8 @@ def get_content():
 
     question = f'{first_number} {operator} {second_number}'
 
+    answer = 0
+
     if operator == '+':
         answer = first_number + second_number
     elif operator == "-":
