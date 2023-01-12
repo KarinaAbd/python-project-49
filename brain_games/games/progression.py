@@ -27,6 +27,6 @@ def get_content():
     correct_answer = str(answer)
 
     progression[random_index] = '..'  # type: ignore
-    question = ' '.join(map(str, progression))  # type: ignore
+    question = ' '.join(map(str, progression))
 
     return question, correct_answer
